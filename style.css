@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.narrow {
+    max-width: 800px;
+}
+
+header {
+    border-bottom: 1px solid #e7e7e7;
+    background: white;
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #171717;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 11px 22px;
+    border: 1px solid #171717;
+    border-radius: 7px;
+}
+
+.hero {
+    padding: 100px 0;
+    background: #f7f7f5;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.tag {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    max-width: 760px;
+    margin-bottom: 25px;
+}
+
+.hero-text > p:not(.tag) {
+    font-size: 19px;
+    max-width: 600px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-card {
+    padding: 40px;
+    background: #171717;
+    color: white;
+    border-radius: 16px;
+}
+
+.hero-card h2 {
+    font-size: 32px;
+    margin: 10px 0 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 50px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats strong {
+    font-size: 30px;
+}
+
+.stats span {
+    color: #aaa;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.grey {
+    background: #f7f7f5;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-heading > p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.section-heading h2 {
+    margin-top: 10px;
+    font-size: 42px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.card span {
+    font-size: 13px;
+    color: #777;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+    font-size: 23px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.card a {
+    font-weight: bold;
+}
+
+.cta {
+    padding: 90px 0;
+    background: #171717;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 42px;
+}
+
+.cta p {
+    color: #aaa;
+    margin: 12px 0 30px;
+}
+
+.btn-light {
+    display: inline-block;
+    background: white;
+    color: #171717;
+    padding: 13px 25px;
+    border-radius: 7px;
+}
+
+footer {
+    padding: 60px 0 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    color: #777;
+}
+
+.footer div:last-child {
+    display: flex;
+    gap: 25px;
+}
+
+.copyright {
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+}
+
+.page-hero {
+    padding: 100px 0;
+    background: #f7f7f5;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 15px 0 20px;
+}
+
+.page-hero > div > p:last-of-type {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.service-number {
+    font-size: 18px;
+    color: #888;
+}
+
+.service-row h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.service-row p {
+    max-width: 700px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service-row a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.about-grid h2 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.about-grid p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.contact-grid h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact-grid p:not(.tag) {
+    color: #777;
+    margin-top: 20px;
+}
+
+.contact-box {
+    background: #f4f4f2;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.contact-box h3 {
+    font-size: 28px;
+}
+
+.contact-box p {
+    margin-bottom: 30px;
+}
+
+.form-section {
+    padding: 80px 20px;
+    background: #f7f7f5;
+    min-height: calc(100vh - 75px);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 14px;
+}
+
+.form-container h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.form-container > p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    width: 100%;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .service-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer div:last-child {
+        flex-wrap: wrap;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .form-container h1 {
+        font-size: 34px;
+    }
+}
